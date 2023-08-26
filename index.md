@@ -12,6 +12,10 @@ In the summer of 2022, I developed a novel path planning algorithm for [the Humm
 
 I [ran a project](easel.md) to identify and address workflow problems for professors' use of Canvas, a Learning Management Software.
 
+## I thrive in environments in which people of different skills work towards a common goal
+
+For my Collaborative Design class, I worked with a group of other engineers to design a product to improve the lives of service animal trainers; our solution was [SAFEcert](safecert.md).
+
 ## Languages
 
 | <img src="assets/logos/python.svg"> <br> Python   | <img src="assets/logos/java.svg"> <br> Java        | <img src="assets/logos/c.svg"> <br> C/C++                   | <img src="assets/logos/swift.svg"> <br> Swift |
@@ -38,6 +42,8 @@ I [ran a project](easel.md) to identify and address workflow problems for profes
 [Noodle Maps](noodlemaps.md)
 
 [Invisible Map](occam.md)
+
+[SAFEcert](safecert.md)
 
 [Chess Not Checkers: Automatic Chess Board](chess.md)
 
