@@ -14,14 +14,9 @@ I [ran a project](easel.md) to identify and address workflow problems for profes
 
 ## Languages
 
-- Python
-- Java
-- C/C++
-- Swift
-- OCaml
-- MATLAB
-- JavaScript
-- SQL
+| <img src="assets/logos/python.svg"> <br> Python   | <img src="assets/logos/java.svg"> <br> Java        | <img src="assets/logos/c.svg"> <br> C/C++                   | <img src="assets/logos/swift.svg"> <br> Swift |
+|---|---|---|---|
+| <img src="assets/logos/ocaml.svg"> <br> **OCaml** | <img src="assets/logos/matlab.svg"> <br> **MATLAB** | <img src="assets/logos/javascript.svg"> <br> **JavaScript** | <img src="assets/logos/sql.svg"> <br> **SQL** |
 
 ## Tools
 
@@ -30,6 +25,7 @@ I [ran a project](easel.md) to identify and address workflow problems for profes
 - ARKit
 - Azure ML
 - Flask
+- Solidworks
 
 ## See my projects!
 
