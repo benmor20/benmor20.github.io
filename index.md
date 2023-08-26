@@ -1,6 +1,6 @@
 # Ben Morris, '24, B.S. Engineering/CS
 
-![Profile Picture](assets/PortfolioPic.png)
+<img src="assets/PortfolioPic.png" alt="Ben Morris" width="200"/>
 
 I am a Computing major at Olin College of Engineering with a specialty in writing software to enable robots to make decisions.
 
@@ -16,20 +16,12 @@ I [ran a project](easel.md) to identify and address workflow problems for profes
 
 For my Collaborative Design class, I worked with a group of other engineers to design a product to improve the lives of service animal trainers; our solution was [SAFEcert](safecert.md).
 
-## Languages
+## Languages and Tools
 
-| <img src="assets/logos/python.svg"> <br> Python   | <img src="assets/logos/java.svg"> <br> Java        | <img src="assets/logos/c.svg"> <br> C/C++                   | <img src="assets/logos/swift.svg"> <br> Swift |
-|---|---|---|---|
-| <img src="assets/logos/ocaml.svg"> <br> **OCaml** | <img src="assets/logos/matlab.svg"> <br> **MATLAB** | <img src="assets/logos/javascript.svg"> <br> **JavaScript** | <img src="assets/logos/sql.svg"> <br> **SQL** |
-
-## Tools
-
-- Git/GitHub
-- Ubuntu
-- ARKit
-- Azure ML
-- Flask
-- Solidworks
+| <img src="assets/logos/python.svg" width="50"> <br> Python | <img src="assets/logos/java.svg" width="50"> <br> Java        | <img src="assets/logos/c.svg" width="50"> <br> C/C++                   | <img src="assets/logos/swift.svg" width="50"> <br> Swift |
+|:---------------------------------------------------------:|:---:|:---:|:---:|
+|     <img src="assets/logos/ocaml.svg" width="50"> <br> **OCaml**     | <img src="assets/logos/matlab.svg" width="50"> <br> **MATLAB** | <img src="assets/logos/javascript.svg" width="50"> <br> **JavaScript** | <img src="assets/logos/sql.svg" width="50"> <br> **SQL** |
+|  <img src="assets/logos/github.svg" width="50"> <br> **Git/GitHub**  | <img src="assets/logos/ubuntu.svg" width="50"> <br> **Ubuntu** | <img src="assets/logos/arkit.svg" width="50"> <br> **ARKit** | <img src="assets/logos/flask.svg" width="50"> <br> **Flask** |
 
 ## See my projects!
 
