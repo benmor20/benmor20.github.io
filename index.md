@@ -2,7 +2,7 @@
 
 ![Profile Picture](assets/PortfolioPic.png)
 
-I am a Computing major at Olin College with a specialty in writing software to enable robots to make decisions.
+I am a Computing major at Olin College of Engineering with a specialty in writing software to enable robots to make decisions.
 
 ## I get the complicated problems
 
@@ -10,7 +10,7 @@ In the summer of 2022, I developed a novel path planning algorithm for [the Humm
 
 ## I understand the full cycle: from use to design to implementation
 
-I [ran a project](easel.md) to identify and address workflow problems for professors' use of Canvas, a Learning Management Software.
+I [ran a project](easel.md) to identify and address workflow problems for professors' use of Canvas, a Learning Management Software by identifying and addressing workflow problems.
 
 ## I thrive in environments in which people of different skills work towards a common goal
 
