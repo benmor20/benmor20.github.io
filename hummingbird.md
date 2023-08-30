@@ -57,4 +57,10 @@ the swarm.
 
 ## Results
 
-TODO: Pull pictures and videos from last summer
+DGD was a very successful algorithm. Here is a video of it running on a single drone:
+
+<video src="assets/dgd.mp4"></video>
+
+Here, lighter colors are "downhill" while darker colors are "uphill". The black dot is the drone using DGD, with a line coming from it in its direction of motion. Each of the dark blue dots is a source; a place the drone wants to avoid. In this case, they represent other drones following straight-line paths. Finally, the purple star represents the target. As you can see in the video, the drone using DGD dynamically navigates around other moving obstacles while still heading towards its target.
+
+I implemented this system in large simulations, and while there were still some crashes (likely due to parameter tuning that I did not have time to fix within my research period), the number was significantly reduced compared to other systems without sacrificing path efficiency or accuracy and while having minimal computation time.
