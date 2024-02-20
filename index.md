@@ -30,3 +30,4 @@ For my Collaborative Design class, I worked with a group of other engineers to d
 |:---:|:---:|:---:|
 | <img src="assets/project-pics/noodlemaps.svg" width="50"> <br> [**Noodle Maps**](noodlemaps.md) | <img src="assets/project-pics/invisiblemap.png" width="50"> <br> [**Invisible Map**](occam.md) | <img src="assets/project-pics/safecert.png" width="50"> <br> [**SAFEcert**](safecert.md) |
 | <img src="assets/project-pics/chess.jpg" width="50"> <br> [**Automatic Chess Board**](chess.md) | <img src="assets/project-pics/sat.png" width="50"> <br> [**Why is SAT NP-Complete?**](sat.md) | <img src="assets/project-pics/pong.jpg" width="50"> <br> [**Arcade Games**](arcade.md) |
+| [Neato Tag](neato_tag.md) | | |
