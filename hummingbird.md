@@ -5,7 +5,7 @@
 In the summer of 2022, I worked in the Olin College RoboLab on a project called
 Hummingbird. The goal of this project was to create a swarm of drones that could
 each complete different tasks in a cramped, enclosed environment. For that
-summer, the team's goal was to provide proof of concept within a ten week
+summer, the team's goal was to provide proof of concept within a ten-week
 period.
 
 My specific task was to create a path planning algorithm and test it in a
@@ -59,7 +59,8 @@ the swarm.
 
 DGD was a very successful algorithm. Here is a video of it running on a single drone:
 
-<video src="assets/dgd.mp4" width="500"></video>
+<iframe width="500"
+src="https://www.youtube.com/embed/jVNH_aLmtPI">
 
 Here, lighter colors are "downhill" while darker colors are "uphill". The black dot is the drone using DGD, with a line coming from it in its direction of motion. Each of the dark blue dots is a source; a place the drone wants to avoid. In this case, they represent other drones following straight-line paths. Finally, the purple star represents the target. As you can see in the video, the drone using DGD dynamically navigates around other moving obstacles while still heading towards its target.
 
