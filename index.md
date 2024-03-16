@@ -25,7 +25,7 @@ service animal trainers; our solution was [SAFEcert](safecert.md).
 
 Not only have I gotten the chance to take classes like Acting Shakespeare and [Tell the Story of What you Make](tell_the_story.md),
 but I am the president of my college's theater group, the [Franklin W. Olin Players](fwop.md), where I got the chance to
-act, but also stage-manage and even direct! 
+act, stage-manage, and even direct! 
 
 ## Languages and Tools
 
