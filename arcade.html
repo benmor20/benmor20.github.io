@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcade Games | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css"> <!-- reuse the homepage CSS -->
+  <style>
+    /* Page-specific tweaks */
+    .content {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .project-links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <header>
+      <div>
+        <h1>Arcade Games</h1>
+        <p>Software Systems course projects in C using MVC architecture</p>
+        <div class="project-links">
+          <a href="https://github.com/olincollege/arcade-games">🎮 Arcade Games Repo</a>
+          <a href="https://github.com/olincollege/minesnake">🐍 MineSnake Repo</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        In my Software Systems class, I built two arcade-style games in C.
+        The first was a flexible <strong>Pong implementation</strong> designed so new games could be added
+        easily to the same application. The second was <strong>MineSnake</strong>,
+        a creative mashup of <em>Snake</em> and <em>Minesweeper</em>.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>My Contributions</h2>
+      <h3>Pong</h3>
+      <p>
+        I worked on both the <em>Model</em> and <em>Controller</em>. To enable extensibility,
+        I implemented a <a href="https://github.com/olincollege/arcade-games/blob/main/src/states.h#L14-L30">State struct</a>
+        and a <a href="https://github.com/olincollege/arcade-games/blob/main/src/states.h#L33-L48">State Manager</a>.
+        These acted like an abstract class and stack-based manager for game states
+        (e.g., start menu, Pong game, pause menu). This allowed seamless pausing and resuming
+        without reloading states.
+      </p>
+      <p>
+        I also wrote the
+        <a href="https://github.com/olincollege/arcade-games/blob/main/src/pong/pong.c#L76-L116">update method</a>
+        for the Pong state and developed
+        <a href="https://github.com/olincollege/arcade-games/blob/main/src/pong/pong_controller.c">controller logic</a>
+        to track held keys (since our input library only registered press/release events).
+      </p>
+
+      <h3>MineSnake</h3>
+      <p>
+        MineSnake combined the fast-paced movement of Snake with the logic puzzles of Minesweeper.
+        The snake revealed the board as it moved, uncovering bombs or food. Eating bombs ended the game;
+        eating food grew the snake, with the goal of finding all hidden food on the field.
+      </p>
+      <p>
+        I again focused on the <a href="https://github.com/olincollege/minesnake/blob/main/src/model.h">Model</a>
+        and <a href="https://github.com/olincollege/minesnake/blob/main/src/controller.h">Controller</a>.
+        The model handled bomb placement, snake growth, and revealing regions of the board.
+        Compared to Pong, this required more sophisticated logic to manage both real-time
+        gameplay and puzzle-solving mechanics.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Try It</h2>
+      <p>
+        To play MineSnake or explore Pong, clone the repos above and follow the setup
+        instructions in the <a href="https://github.com/olincollege/minesnake/blob/main/README.md">README</a>.
+        Both projects are fully open source.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>
