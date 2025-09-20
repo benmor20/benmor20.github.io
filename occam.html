@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCCaM Lab: Invisible Map | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Invisible Map</h1>
+        <p>Research in Olin College’s OCCaM Lab on indoor navigation for the blind & visually impaired</p>
+        <div class="project-links">
+          <a href="https://ieeexplore.ieee.org/document/5979949">📄 G2O Paper</a>
+        </div>
+      </div>
+      <img src="assets/project-pics/invisiblemap.png" alt="OCCaM Lab Invisible Map Logo">
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        In summer 2021, I worked in the <strong>Olin College Crowdsourcing and Machine-Learning (OCCaM) Lab</strong>
+        under advisor Paul Ruvolo. OCCaM Lab co-designs apps with and for the blind and visually impaired (B/VI) community.
+        Their major app, <em>Clew</em>, uses Apple’s ARKit to guide users back along a path they’ve walked with a sighted guide.
+      </p>
+      <p>
+        My project focused on <strong>Invisible Map</strong>, a prototype navigation app extending Clew to support
+        full indoor navigation <em>without</em> a sighted guide. The idea: create one-time maps of a building
+        (by an employee, for example), which could then be shared with B/VI users for autonomous navigation.
+      </p>
+      <p>
+        <strong>By the end of the summer, we delivered a reliable proof-of-concept demo,
+        improving SLAM accuracy and showing Invisible Map’s potential to expand autonomy
+        for blind and visually impaired users.</strong>
+      </p>
+    </section>
+
+    <!-- Challenges -->
+    <section class="content">
+      <h2>Challenges</h2>
+      <p>
+        Invisible Map’s core challenge was a <strong>Simultaneous Localization and Mapping (SLAM)</strong> problem:
+        the app needed to build maps and track its location simultaneously.
+        The two main issues were:
+      </p>
+      <ul>
+        <li><strong>Drift</strong> — compounded sensor error degraded accuracy over time.</li>
+        <li><strong>Outliers in AprilTag detection</strong> — misread tags skewed maps, sometimes by meters.</li>
+      </ul>
+    </section>
+
+    <!-- Contributions -->
+    <section class="content">
+      <h2>My Contributions</h2>
+
+      <h3>1. Weighting Error Sources</h3>
+      <ul>
+        <li>Investigated <a href="https://ieeexplore.ieee.org/document/5979949">G2O</a> optimization for SLAM with 12 error weights
+            (x, y, z, yaw, pitch, roll for two detection types).</li>
+        <li>Implemented a genetic algorithm to tune weights, but lacked ground truth for validation.</li>
+        <li>Discovered that inconsistencies came from different magnitudes in weight vectors.
+            Normalizing standard weights resolved ranking issues and improved reliability.</li>
+      </ul>
+
+      <h3>2. Improving AprilTag Detection</h3>
+      <ul>
+        <li>Camera-based AprilTag detection introduced severe outliers, especially in orientation.</li>
+        <li>Integrated <strong>LiDAR raycasting</strong> to flatten AprilTag readings onto walls,
+            leveraging LiDAR’s accurate surface orientation.</li>
+        <li>This dramatically reduced rotational errors and produced much cleaner maps.</li>
+      </ul>
+    </section>
+
+    <!-- Results -->
+    <section class="content">
+      <h2>Results</h2>
+      <p>
+        By the end of the summer, my partner and I transformed Invisible Map from
+        a struggling prototype into a <strong>working proof-of-concept demo</strong>.
+        With improved weighting strategies and LiDAR-enhanced AprilTag detection,
+        maps were significantly more accurate and robust.
+      </p>
+    </section>
+
+    <!-- Future Work -->
+    <section class="content">
+      <h2>Future Work</h2>
+      <p>
+        We also began tackling <strong>path optimization</strong>. The existing breadcrumb approach
+        required users to exactly retrace the map creator’s path, leading to inefficient routes.
+        Our contribution was a LiDAR-based algorithm to detect whether two points
+        were connected by a floor (with no walls between them).
+      </p>
+      <p>
+        This raycasting method showed promise for detecting overlapping regions
+        and enabling shortcuts, though it remained as a demo for future researchers
+        to integrate into Invisible Map.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>

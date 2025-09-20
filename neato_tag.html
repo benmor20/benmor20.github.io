@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neato Tag | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Neato Tag</h1>
+        <p>Teaching robots to play tag using multi-sensor fusion</p>
+        <div class="project-links">
+          <a href="https://ajevans451.github.io/neato_tag/">🌐 Project Website</a>
+          <a href="https://ajevans451.github.io/neato_tag/assets/photos.html">🎥 Videos</a>
+        </div>
+      </div>
+      <img src="assets/project-pics/neato.png" alt="A Neato robot">
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        For my <em>Introduction to Computational Robotics</em> final project, our group
+        wanted to experiment with both <strong>swarm robotics</strong> and
+        <strong>multi-sensor fusion</strong>. The result was <em>Neato Tag</em>:
+        a playful system where Neato robots chased and tagged each other autonomously.
+      </p>
+      <p>
+        Each robot combined data from a Raspberry Pi camera and its onboard LiDAR.
+        Semi-circles of sticky notes were placed on the backs of Neatos to act as tags,
+        and bump sensors confirmed when one robot successfully tagged another.
+        ROS2 nodes on a central computer coordinated the system, allowing multiple Neatos
+        to play tag together.
+      </p>
+      <p>
+        <strong>We created a successful proof-of-concept where three Neato robots played tag autonomously, showcasing scalable swarm behaviors.</strong>
+      </p>
+    </section>
+
+    <!-- Contributions -->
+    <section class="content">
+      <h2>My Contributions</h2>
+      <ul>
+        <li>
+          Developed an algorithm to detect semi-circles of a given radius
+          in LiDAR point clouds.
+        </li>
+        <li>
+          Integrated Raspberry Pi camera feeds with OpenCV for Neato detection.
+        </li>
+        <li>
+          Researched <strong>Kalman filtering</strong> for sensor fusion
+          (though not deployed in the final version).
+        </li>
+        <li>
+          Wrote the target-path algorithm combining LiDAR-based obstacle avoidance
+          with other Neatos’ positions, feeding into a potential field / gradient descent model.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Results -->
+    <section class="content">
+      <h2>Results</h2>
+      <p>
+        The project was highly successful: we had <strong>three Neatos playing tag
+        autonomously</strong>, with the ability to expand to more robots given hardware.
+        The system could run continuously until battery depletion.
+      </p>
+      <p>
+        We also built an alternate mode: “it” ran autonomously, while the other Neatos
+        were piloted remotely by humans attempting to avoid being tagged.
+        This made for a fun demo and showcased the flexibility of the control system.
+      </p>
+      <p>
+        See <a href="https://ajevans451.github.io/neato_tag/assets/photos.html">videos here</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>

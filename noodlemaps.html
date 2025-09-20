@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noodle Maps | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Noodle Maps</h1>
+        <p>Web app and custom CI framework for Larger-Scale Software Development</p>
+        <div class="project-links">
+          <a href="https://github.com/olincollege/noodlemaps">💻 Repo</a>
+        </div>
+      </div>
+      <img src="assets/project-pics/noodlemaps.svg" alt="Noodle Maps logo">
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        In my junior year, I took <em>Larger-Scale Software Development</em>, a course focused on
+        professional coding practices such as documentation, testing, and continuous integration (CI).
+        For the final project, our team built <strong>Noodle Maps</strong>: a simple route-planning
+        web app that doubled as a testbed for our custom CI framework.
+      </p>
+      <p>
+        The app used the Google Maps API on the backend with a minimal HTML frontend.
+        Our real emphasis was on designing a workflow that enforced rigorous quality checks
+        before code could reach the main branch.
+      </p>
+    </section>
+
+    <!-- Our Framework -->
+    <section class="content">
+      <h2>Our CI Framework</h2>
+      <p>
+        We implemented a structured GitHub-based workflow to ensure correctness and collaboration:
+      </p>
+      <ol>
+        <li>Each new feature started on its own branch.</li>
+        <li>Unit and integration tests were written <em>before</em> implementation, focusing on
+            inputs/outputs instead of brittle internal logic.</li>
+        <li>Commits triggered hooks to check unit tests.</li>
+        <li>Pull requests merged into <code>true-head</code> only if integration tests passed
+            (via a custom GitHub Action).</li>
+        <li>If reviewers approved and all tests passed, <code>true-head</code> was merged into
+            <code>green-head</code> — but only after a full end-to-end test suite succeeded.</li>
+      </ol>
+      <p>
+        This structure prevented direct merges to protected branches and blocked bugs
+        at multiple checkpoints.
+      </p>
+      <p>
+        <strong>Our CI framework enforced multi-layered testing and review, ensuring that the main branch was always stable and deployable.</strong>
+      </p>
+    </section>
+
+    <!-- My Contributions -->
+    <section class="content">
+      <h2>My Contributions</h2>
+      <ul>
+        <li>
+          Implemented GitHub Actions for
+          <a href="https://github.com/olincollege/noodlemaps/blob/4c2eaeef568934575e3a34088523362874a23937/.github/workflows/integration-tests.yml">
+            integration testing
+          </a>, blocking PRs until issues were fixed
+          (caught bugs such as <a href="https://github.com/olincollege/noodlemaps/pull/21">PR #21</a>).
+        </li>
+        <li>
+          Authored the full suite of
+          <a href="https://github.com/olincollege/noodlemaps/tree/bf964426354652664315b21305abe32925c79913/testing/end_to_end_tests">
+            end-to-end tests
+          </a>, verifying the system as a whole.
+        </li>
+        <li>
+          Modified our
+          <a href="https://github.com/olincollege/noodlemaps/blob/bf964426354652664315b21305abe32925c79913/.github/workflows/get-green-head.yml">
+            deployment workflow
+          </a> so merges to <code>green-head</code> only occurred
+          if end-to-end tests succeeded.
+        </li>
+        <li>
+          Contributed to features such as the
+          <a href="https://github.com/olincollege/noodlemaps/blob/42df3cc9a49b3fb977f1ede1a08290c1d39a91aa/src/utils/url_builder.py">
+            <code>UrlBuilder</code> class
+          </a>.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Outcome -->
+    <section class="content">
+      <h2>Outcome</h2>
+      <p>
+        Our CI framework ensured a high-quality codebase by enforcing
+        multiple layers of automated and human review.
+        The structured process gave us confidence that
+        <code>green-head</code> was always stable and deployable.
+        Noodle Maps demonstrated how disciplined CI/CD practices can
+        minimize bugs even in a student project.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>

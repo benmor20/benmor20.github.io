@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hummingbird | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Robotic Path Planning with Hummingbird</h1>
+        <p>Research in Olin College’s RoboLab on drone swarm navigation</p>
+      </div>
+      <img src="assets/project-pics/hummingbird.png" alt="Hummingbird Project Drone Simulation">
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        In summer 2022, I worked in Olin College’s <strong>RoboLab</strong> on
+        <em>Hummingbird</em>, a project exploring swarms of drones in tight, enclosed environments.
+        The summer goal was to deliver a working proof of concept within ten weeks.
+      </p>
+      <p>
+        My task was to design and test a <strong>path planning algorithm</strong>
+        in simulation. Existing approaches like gradient descent, particle swarm optimization,
+        and artificial potential fields struggled in this context because of:
+      </p>
+      <ul>
+        <li>❌ <strong>High computation times</strong> — drones froze while recalculating paths.</li>
+        <li>❌ <strong>Static environment assumptions</strong> — moving drones often caused collisions.</li>
+        <li>❌ <strong>Low precision</strong> — most were designed for large open spaces, not
+            centimeter-level accuracy in cramped environments.</li>
+      </ul>
+      <p>
+        <strong>So, I created a new algorithm which reduced collisions and enabled real-time path planning in drone swarm simulations.</strong>
+      </p>
+    </section>
+
+    <!-- Solution -->
+    <section class="content">
+      <h2>Solution: Dynamic Gradient Descent (DGD)</h2>
+      <p>
+        To address these issues, I developed a new algorithm,
+        <strong>Dynamic Gradient Descent (DGD)</strong>, inspired by traditional gradient descent
+        but adapted for real-time, dynamic environments.
+      </p>
+      <p>
+        Instead of precomputing a full path, DGD recalculates each step in
+        <em>fractions of a second</em>:
+      </p>
+      <ul>
+        <li>At each loop, the drone builds a local “topographical map” of the target
+            (valley) and obstacles (mountains).</li>
+        <li>A metaphorical ball “rolls downhill” for a short duration,
+            providing the next movement direction.</li>
+        <li>The drone moves one step, polls updated obstacle positions, and repeats.</li>
+      </ul>
+      <p>
+        This spreads computation across the entire flight and allows for
+        continuous course correction without predicting other drones’ paths.
+      </p>
+    </section>
+
+    <!-- Results -->
+    <section class="content">
+      <h2>Results</h2>
+      <p>
+        DGD significantly outperformed the other algorithms I tested:
+      </p>
+      <ul>
+        <li>✅ <strong>Reduced collisions</strong> compared to traditional approaches.</li>
+        <li>✅ <strong>Maintained path efficiency and accuracy</strong>.</li>
+        <li>✅ <strong>Minimal computation time</strong> enabled real-time control.</li>
+      </ul>
+
+      <p>Video demo of DGD in action:</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jVNH_aLmtPI"
+        title="Dynamic Gradient Descent Demo"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+
+      <p>
+        In the visualization, lighter colors are “downhill” while darker colors are “uphill.”
+        The black dot represents the drone, dark blue dots represent obstacles (other drones),
+        and the purple star is the target. The drone dynamically navigates obstacles while
+        progressing toward its goal.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>
