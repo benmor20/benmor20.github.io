@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easel | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Easel: Work with Canvas</h1>
+        <p>A git-like command-line tool to make Canvas easier to use</p>
+        <div class="project-links">
+          <a href="https://github.com/olincollege/easel">💻 Easel Repo</a>
+          <a href="https://github.com/olincollege/easel/tree/basic-structure">🌱 Basic Structure Branch</a>
+          <a href="https://github.com/olincollege/easel/tree/date-transfer">🗓 Date Transfer Branch</a>
+        </div>
+      </div>
+      <img src="assets/project-pics/easel.svg" alt="Easel Project Logo">
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        In summer 2023, I worked with Professor Steve Matsumoto at Olin College to create
+        <strong>Easel</strong>, a git-like command line tool that streamlines workflows
+        in Canvas courses. As the sole researcher on this project, I assessed faculty pain points,
+        designed new workflows, and built an MVP tool.
+      </p>
+      <p>
+        Canvas lacks features such as copying quizzes or bulk-updating assignment dates.
+        Faculty often spend hours recreating or adjusting course materials. Easel addressed
+        these problems by representing Canvas resources in Markdown and using familiar
+        git-style commands (<code>create</code>, <code>push</code>, <code>pull</code>)
+        for simple, repeatable workflows.
+      </p>
+    </section>
+
+    <!-- Contributions -->
+    <section class="content">
+      <h2>My Contributions</h2>
+      <ul>
+        <li>Surveyed Olin faculty to identify core Canvas pain points (quiz duplication,
+            course date migration, assignment updates).</li>
+        <li>Designed a Markdown format for Canvas resources, where each resource is a
+            self-contained file with metadata:</li>
+      </ul>
+      <pre><code># [name of resource]
+
+[description of resource]
+
+## Metadata
+[list of metadata variables]
+</code></pre>
+      <ul>
+        <li>Developed the <code>EaselDoc</code> class to parse, standardize, upload,
+            and download resources from Canvas.</li>
+        <li>Implemented initial commands:
+          <code>easel create</code>, <code>easel push</code>, <code>easel pull</code>.</li>
+        <li>Created a generalized JSON Academic Calendar format (ISO-8601 with cycle-based
+            extensions) to support flexible date shifting.</li>
+      </ul>
+    </section>
+
+    <!-- Proof of Concept -->
+    <section class="content">
+      <h2>Proof of Concept: Date Transfer</h2>
+      <p>
+        As an early step, I built a standalone utility to transfer assignment due dates
+        between semesters. This introduced me to the Canvas API and addressed a
+        major faculty frustration. Work is available on the
+        <a href="https://github.com/olincollege/easel/tree/date-transfer">date-transfer branch</a>.
+      </p>
+    </section>
+
+    <!-- Outcome -->
+    <section class="content">
+      <h2>Outcome</h2>
+      <p>
+        By the end of the summer, I had developed a functional Easel MVP.
+        Faculty could now create, update, and copy Canvas resources more efficiently,
+        saving hours of manual work each semester. The system laid the groundwork for
+        advanced features like relative date representations beyond fixed datetime strings.
+      </p>
+      <p>
+        For full project details, see the
+        <a href="https://github.com/olincollege/easel/blob/420666e833463b7a1714ed896dbead951464cdc7/README.md">README</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>

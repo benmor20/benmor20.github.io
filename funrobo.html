@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous Rover | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Autonomous Rover</h1>
+        <p>Fundamentals of Robotics final project: navigating Olin's Oval with sensors & AI</p>
+        <div class="project-links">
+          <a href="https://github.com/benmor20/CarGoNyoom">💻 Project Repo</a>
+          <a href="https://github.com/benmor20/CarGoNyoom/blob/main/Resources/FinalProject2022_RevB.pdf">📄 Challenge Description</a>
+        </div>
+      </div>
+      <img src="assets/project-pics/funrobo.png" alt="Our autonomous rover">
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        For my <em>Fundamentals of Robotics</em> final project, our team built an
+        <strong>autonomous rover</strong> capable of navigating Olin College’s Oval
+        while completing three challenges: a slalom, crossing a bridge,
+        and passing through a gate.
+      </p>
+      <p>
+        We started with an Arrma Mojave RC base and added sensors of our choosing.
+        The challenge required robust navigation and obstacle handling within
+        a constrained environment.
+      </p>
+    </section>
+
+    <!-- Contributions -->
+    <section class="content">
+      <h2>My Contributions</h2>
+      <p>
+        I was one of two primary software engineers on the team. We developed a
+        modular decision-making system based on <strong>“brainwaves”</strong> —
+        independent modules representing different driving behaviors.
+      </p>
+      <ul>
+        <li>
+          Each brainwave produced a vector of possible speeds and directions
+          with associated weights (e.g., “avoid obstacle,” “follow AprilTags”).
+        </li>
+        <li>
+          Example brainwaves included
+          <a href="https://github.com/benmor20/CarGoNyoom/blob/main/src/brainwaves/follow_color.m">follow a specific color</a>
+          and
+          <a href="https://github.com/benmor20/CarGoNyoom/blob/main/src/brainwaves/go_straight.m">positively weight going straight</a>.
+        </li>
+        <li>
+          An <a href="https://github.com/benmor20/CarGoNyoom/blob/main/src/arbiter.m">arbiter</a>
+          collected the outputs from all brainwaves and selected the final speed
+          and direction with the highest overall weight.
+        </li>
+      </ul>
+      <p>
+        This architecture allowed the rover to balance multiple factors simultaneously
+        (e.g., avoiding cones while tracking a path) and adapt to different sections
+        of the course.
+      </p>
+    </section>
+
+    <!-- Outcome -->
+    <section class="content">
+      <h2>Outcome</h2>
+      <p>
+        The rover successfully demonstrated autonomous navigation through
+        various challenges using the brainwave-based control system.
+        The modular design provided flexibility for adding or swapping behaviors,
+        making it a strong foundation for future robotic projects.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>

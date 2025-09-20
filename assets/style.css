@@ -151,3 +151,31 @@ a:hover {
   transform: translateY(-2px);
   color: white;
 }
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.project-header img {
+  max-width: 260px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.content {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}

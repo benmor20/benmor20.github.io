@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Not Checkers | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css"> <!-- shared CSS -->
+</head>
+<body>
+  <main>
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <header class="project-header">
+      <div>
+        <h1>Chess Not Checkers</h1>
+        <p>Automatic chess board powered by Arduino, Python, and custom hardware</p>
+        <div class="project-links">
+          <a href="https://olincollege.github.io/pie-2021-03/Chess-not-Checkers/">📄 Project Site</a>
+          <a href="https://github.com/gabbyblake/PIE-Final-Project-Chess">💻 GitHub Repo</a>
+        </div>
+      </div>
+      <img src="assets/project-pics/chess.jpg" alt="Chess Not Checkers Project">
+    </header>
+
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        As part of my <em>Principles of Integrated Engineering</em> course, I worked with a team
+        to create an <strong>automatic chess board</strong> — a physical board where pieces
+        could move themselves, allowing a person to play against a chess AI in real life.
+      </p>
+      <p>
+        The board concealed an electromagnet mounted on a two-axis gantry system, controlled
+        by an Arduino. A laptop ran a Python-based chess AI and sent commands to the Arduino,
+        which moved magnetic pieces across the board. An array of hall effect sensors
+        detected when a human moved pieces manually, keeping the system synchronized.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>My Contributions</h2>
+      <p>
+        I focused on building the <strong>control and communication system</strong> between
+        the Arduino and the Python chess controller. My work included:
+      </p>
+      <ul>
+        <li>
+          Writing <a href="https://github.com/gabbyblake/PIE-Final-Project-Chess/blob/fa2f870c178225c281f9ef2c957a9d6db1dc1526/Arduino/SerialConnection/SerialConnection.ino">Arduino code</a>
+          to parse commands, control stepper motors and the electromagnet,
+          and read hall effect sensors.
+        </li>
+        <li>
+          Designing a <strong>custom serial communication protocol</strong> that minimized data
+          transfer while still allowing fine-grained control of motors, sensors,
+          and electromagnet states.
+        </li>
+        <li>
+          Writing <a href="https://github.com/gabbyblake/PIE-Final-Project-Chess/tree/fa2f870c178225c281f9ef2c957a9d6db1dc1526/PythonChessController/src/hardware">Python classes</a>
+          to abstract hardware devices — from low-level
+          <a href="https://github.com/gabbyblake/PIE-Final-Project-Chess/blob/fa2f870c178225c281f9ef2c957a9d6db1dc1526/PythonChessController/src/hardware/serial_protocol.py">serial connection</a>
+          to <a href="https://github.com/gabbyblake/PIE-Final-Project-Chess/blob/fa2f870c178225c281f9ef2c957a9d6db1dc1526/PythonChessController/src/hardware/drive_system.py">gantry/motor control</a>.
+        </li>
+      </ul>
+      <p>
+        With these abstractions, moving a piece became as simple as calling
+        <code>move_to("A5")</code>, while the system handled the motor updates
+        and sensor checks in the background.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Outcome</h2>
+      <p>
+        While we didn’t fully complete a playable chess match by the project deadline,
+        the communication system worked reliably and made integration with higher-level
+        chess logic straightforward. Once subsystems were ready, new piece movements
+        could be programmed with just a few lines of code, enabling rapid iteration.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>
