@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tell the Story of What You Make | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .project-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .img-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 768px) {
+      .img-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .img-row img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Tell the Story of What You Make</h1>
+        <p>Design portfolio projects from Olin College</p>
+      </div>
+      <img src="assets/project-pics/tellthestory.svg" alt="Design collage thumbnail" />
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        <em>Tell the Story of What You Make</em> is a design class at Olin College
+        taught by Professor Tim Sauder. I took it during my junior year, learning
+        to communicate ideas through visual design. The class emphasized
+        <strong>deliberate design, critique, and iteration</strong>.
+        Here are some of my favorite projects from the semester.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section class="content">
+      <h2>Selected Projects</h2>
+
+      <h3>Text Portrait</h3>
+      <p>
+        A self-portrait made entirely of text using a single font. I used a curly,
+        handwritten font to capture the shape of my hair and face.
+      </p>
+      <div class="img-row">
+        <img src="assets/tell_the_story/TextPortraitSource.png" alt="Reference photo of Ben Morris" class="project-img" width="200">
+        <img src="assets/tell_the_story/TextPortrait.svg" alt="Text portrait of Ben Morris" class="project-img" width="200">
+      </div>
+
+      <h3>Miniaturizing Bars</h3>
+      <p>
+        Packaging design exercise: taking the elements of a full-sized bar wrapper
+        and adapting them into a miniature version.
+      </p>
+      <img src="assets/tell_the_story/MiniLarabar.png" alt="Mini Larabar packaging designs" class="project-img" width="500">
+
+      <h3>Punny Logo</h3>
+      <p>
+        A playful logo for the fictional “Country Joe’s Pets,” incorporating pun-based
+        design inspired by grocery store branding.
+      </p>
+      <img src="assets/tell_the_story/PunnyLogo.png" alt="Punny pet store logo" class="project-img" width="300">
+
+      <h3>Infographic</h3>
+      <p>
+        Inspired by designer Nicholas Felton, who tracked yearly life data, I created
+        an infographic about my Thanksgiving break—tracking meals, activities, and even
+        how many dogs I pet.
+      </p>
+      <div class="img-row">
+        <img src="assets/tell_the_story/Infographic.svg" alt="Infographic of Thanksgiving break" class="project-img" width="300">
+      </div>
+
+      <h3>Final Project: Noodle Maps Logo</h3>
+      <p>
+        For my final, I designed a logo for <a href="noodlemaps.html">Noodle Maps</a>.
+        After generating and iterating on multiple ideas, I settled on a bowl of noodles
+        shaped like a world map.
+      </p>
+
+      <div class="img-row">
+        <img src="assets/tell_the_story/final/LogoDrafts.svg"
+             alt="Noodle Maps logo drafts"
+             class="project-img"
+             style="max-width: 45%;">
+        <img src="assets/tell_the_story/final/LogoIterations.svg"
+             alt="Noodle Maps logo iterations"
+             class="project-img"
+             style="max-width: 45%;">
+      </div>
+
+      <div style="text-align: center; margin-top: 1rem;">
+        <img src="assets/tell_the_story/final/FinalLogo.svg"
+             alt="Final Noodle Maps logo"
+             class="project-img"
+             style="max-width: 300px;">
+      </div>
+
+    </section>
+
+    <!-- Outcome -->
+    <section class="content">
+      <h2>Outcome</h2>
+      <p>
+        Through this course, I learned how to approach design with
+        <strong>intentionality and iteration</strong>, how to give and receive critique,
+        and how to communicate complex ideas visually. These projects gave me a
+        foundation for design work that I now bring into my technical and creative projects.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>
