@@ -35,7 +35,7 @@
         In my junior year, I took <em>Larger-Scale Software Development</em>, a course focused on
         professional coding practices such as documentation, testing, and continuous integration (CI).
         For the final project, our team built <strong>Noodle Maps</strong>: a simple route-planning
-        web app that doubled as a testbed for our custom CI framework.
+        web app we made as a testbed for our custom CI framework.
       </p>
       <p>
         The app used the Google Maps API on the backend with a minimal HTML frontend.
@@ -54,11 +54,11 @@
         <li>Each new feature started on its own branch.</li>
         <li>Unit and integration tests were written <em>before</em> implementation, focusing on
             inputs/outputs instead of brittle internal logic.</li>
-        <li>Commits triggered hooks to check unit tests.</li>
+        <li>Commits triggered hooks to run unit tests.</li>
         <li>Pull requests merged into <code>true-head</code> only if integration tests passed
             (via a custom GitHub Action).</li>
         <li>If reviewers approved and all tests passed, <code>true-head</code> was merged into
-            <code>green-head</code> — but only after a full end-to-end test suite succeeded.</li>
+            <code>green-head</code> - but only after a full end-to-end test suite succeeded.</li>
       </ol>
       <p>
         This structure prevented direct merges to protected branches and blocked bugs
