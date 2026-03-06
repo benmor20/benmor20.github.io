@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Virtual Worlds | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Building Virtual Worlds</h1>
+        <p>Class focusing on building game prototypes</p>
+        <div class="project-links">
+          <a href="https://www.youtube.com/live/r4fR_0VXqPI?feature=shared&t=253">🎥 R1 Final Presentation</a>
+          <a href="https://www.youtube.com/live/PWHPLdTEUw0?t=17243s">🎥 R2 Final Presentation</a>
+        </div>
+      </div>
+      <img src="assets/project-pics/bvw.png" alt="Logos and screenshots from my BVW games">
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Class Overview</h2>
+      <p>
+        <em>Building Virtual Worlds</em> (BVW) is a first-semester ETC class focusing on designing and building games in
+        <strong>two-week rounds.</strong> At the end of the semester, certain projects are selected to be showcased in
+        Fall Festival, where friends and families of ETC students, along with other CMU community members, can come to
+        the ETC to play the games and see some of the work that has been done.
+      </p>
+      <p>
+        Each round of BVW focuses on different tech and learning outcomes.
+      </p>
+      <ul>
+        <li><strong>Round 1:</strong> Focuses on novel inputs, user experience, and interest curve. Teams have to make
+        games which <em>feel</em> like players are doing some unique experience, but the teams are only allowed to use
+        buttons as inputs - no keyboard, mouse, or joysticks.</li>
+        <li><strong>Round 2:</strong> Focuses on VR and indirect control. Teams have to build a VR experience to give to
+        a naive guest (someone who has not used VR before), and no instructions can be given, either verbally or with
+        in-game text. In addition, teams must make predictions about what the guest will do.</li>
+        <li><strong>Round 3:</strong> A lightning round which is only one week and uses unique controllers (such as
+        eye-trackers). Focuses on quick iteration towards a workable prototype.</li>
+        <li><strong>Round 4:</strong> An anything round - teams are encouraged to use everything they've learned to make
+        the type of game they like the most. Focus is on making something for Fall Festival, so emphasis is on
+        throughput.</li>
+      </ul>
+      <p>
+        Round 1 and 2 final presentations are linked above. Unfortunately, rounds 3 and 4 were not recorded.
+      </p>
+    </section>
+
+    <!-- Round 1: Altitude -->
+    <section class="content">
+      <h2>Round 1: Altitude</h2>
+      <p>
+        <strong>Altitude</strong> was created during Round 1 of BVW. Our prompt was to design a game that
+        <em>felt</em> like skydiving - using only button inputs.
+      </p>
+      <p>
+        The final prototype had players lying on a mattress with fans in their face to simulate wind, while
+        <strong>a custom four-limb controller</strong> mapped physical movement to avatar control in-game. Players
+        tilted their body to dive through rings and avoid birds, creating a surprisingly immersive skydiving experience.
+      </p>
+      <p>
+        While all team members contributed to ideation and design, I was responsible for much of the gameplay
+        programming and non-player systems. I:
+      </p>
+      <ul>
+        <li>Implemented ring and bird behavior</li>
+        <li>Designed and balanced level progression</li>
+        <li>Built basic UI and gameflow</li>
+        <li>Added landing pad mechanic with scoring</li>
+        <li>Tracked player lives and scores</li>
+        <li>Integrated audio feedback</li>
+        <li>Programmed diving mechanics</li>
+      </ul>
+      <p>
+        We delivered a complete, playable game showcased live during final presentations. The build included audio/visual
+        feedback, a scoring and life system, three difficulty sections, and win/loss conditions.
+        <strong>The professors and peers enjoyed Altitude's creativity and physical immersion,
+        making it one of the most memorable prototypes of the round.</strong>
+      </p>
+    </section>
+
+    <!-- Round 2: Trolley Problem -->
+    <section class="content">
+      <h2>Round 2: Trolley Problem</h2>
+      <p>
+        Our prompt was to make a VR game about driving a trolley. Our final presentation consisted of giving the game to
+        a naive user - someone who has not played VR before - without any instruction, either verbal or through in-game
+        text. We had to use <strong>indirect control</strong> to show the guest what to do.
+      </p>
+      <p>
+        Our game was based on the <strong>trolley problem</strong>, and getting players to make difficult decisions. To emphasize the
+        fact that players can only make one of two decisions, we constructed a rudimentary physical trolley - a box that
+        players had to stand in with a lever that they were handcuffed to. No way to leave, nothing to do besides
+        move the lever back and forth.
+      </p>
+      <p>
+        Every team member contributed to design and ideation for the decisions the player has to make. I was
+        specifically responsible for much of the programming, including:
+      </p>
+      <ul>
+        <li>Level generation</li>
+        <li>Spawning background objects</li>
+        <li>Movement of the trolley</li>
+        <li>Player control</li>
+        <li>Decision tracking/"scoreboard"</li>
+      </ul>
+      <p>
+        We created a 5-minute trolley experience focused on difficult decisions to be shown live during final
+        presentations. Through our use of indirect control, our naive guest correctly hit every prediction we made.
+        <strong>The game stood out as one that made the guest and audience feel some moral tension through the uneasy
+        humor and absurdity of the game, while allowing the audience to play along. The physical "trolley" we made also
+        stuck with professors and peers, making for a memorable experience.</strong>
+      </p>
+    </section>
+
+    <!-- Round 3: N-eye-nja -->
+    <section class="content">
+      <h2>Round 3: N-eye-nja</h2>
+      <p>
+        For round 3, we had to use a unique controller to make a game about juice. My team chose to use an
+        <strong>eye-tracker</strong> to make a custom version of Fruit Ninja. Players were running a juice shop - one
+        had to take orders and choose which fruits to send to the second player, who was using an eye tracker to slice
+        the fruits and a controller to catch the resulting juice into a cup to send to the front.
+      </p>
+      <p>
+        I contributed heavily to the game design and premise. I was also a programmer responsible for:
+      </p>
+      <ul>
+        <li>Eye tracker</li>
+        <li>Spawning and throwing fruit</li>
+        <li>Fruit slicing</li>
+        <li>Juice catching and management</li>
+        <li>Checking orders</li>
+        <li>Throwing bombs</li>
+      </ul>
+      <p>
+        N-eye-nja is a chaotic game of <strong>communication, timing, and dexterity.</strong> We delivered a functional
+        game prototype with just a week of work, integrating new tech into a fun and unique gaming experience.
+      </p>
+    </section>
+
+    <!-- Round 4: Overboard -->
+    <section class="content">
+      <h2>Round 4: Overboard</h2>
+      <p>
+        For round 4, we were encouraged to make a game designed for Fall Festival - an experience focusing on fun
+        gameplay with high throughput. We decided to create a party game loosely inspired by Overcooked. We designed
+        Overboard, a <strong>4v4 pirate game</strong> where teams try to sink their opponent's ship while repairing
+        and defending their own.
+      </p>
+      <p>
+        I was responsible for much of the <strong>game design and interest curve</strong> for Overboard, balancing chaos
+        and simplicity, length and throughput. I had to balance tradeoffs with damage, healing, game mechanics and more.
+        I was also a primary programmer, focusing on:
+      </p>
+      <ul>
+        <li>Picking up items</li>
+        <li>Firing cannons</li>
+        <li>Repairing holes in the ship</li>
+        <li>Ship health</li>
+        <li>Jumping between ships</li>
+        <li>Game flow</li>
+        <li>Intro tutorial</li>
+      </ul>
+      <p>
+        We delivered a fun and unique party game, focusing on chaos on-screen, and "ruining friendships" (in the best
+        way possible). Overboard stood out for it's <strong>high throughput, interesting game design, and fun
+        gameplay</strong> in a round of very strong games.
+      </p>
+    </section>
+
+    <!-- Fall Festival -->
+    <section class="content">
+      <h2>Fall Festival</h2>
+      <p>
+        At the end of the semester, teams can submit their games for consideration to be showcased at Fall Festival, a
+        end-of-semester celebration of the work that has beem done. Of the four games I submitted, <strong>three made
+        it to the final round of judging</strong> and <strong>one made it into Fall Festival, showed off on the big
+        screen in the main area</strong>.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>
