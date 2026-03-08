@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liminal | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+
+<body>
+  <main>
+
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Liminal</h1>
+        <p>Magical Multi-Room Mixed Reality</p>
+        <div class="project-links">
+          <a href="https://projects.etc.cmu.edu/liminal/" target="_blank" rel="noopener">📄 Project Site</a>
+          <a href="https://stream.etc.cmu.edu/projects/2026-semester-1/halves/day1/" target="_blank" rel="noopener">🎥 Halves Presentation (58:15)</a>
+        </div>
+        <p>
+          <strong>Role:</strong> Programmer & Experience Designer<br>
+          <strong>Platform:</strong> Meta Quest (Passthrough AR) <br>
+          <strong>Technologies:</strong> ArUco markers, OpenCV, Unity, Quest Camera API, Raspberry Pi
+        </p>
+      </div>
+
+      <img src="assets/project-pics/liminal.png" alt="Liminal project logo">
+    </header>
+
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        <strong>Liminal</strong> is a multi-room mixed reality experience where guests explore a strange museum and
+        discover magical interactions that blur the boundary between the physical and virtual worlds.
+      </p>
+      <p>
+        The project was proposed by Jesse Schell and Dave Culyba as a challenge: can mixed reality experiences extend
+        beyond a single room?
+      </p>
+      <p>
+        Most augmented reality experiences are limited to one space because environment tracking quickly breaks down
+        when the user moves between rooms. Furniture, lighting, and walls change, causing virtual objects to
+        <strong>drift</strong>. Even briefly leaving and re-entering a room can result in
+        <strong>several inches and tens of degrees of positional error</strong>, breaking immersion.
+      </p>
+      <p>
+        In March 2025, Meta opened Quest camera data to developers. This raised a new possibility: could camera data
+        be used to stabilize tracking and enable <strong>multi-room mixed reality</strong>?
+      </p>
+      <p>
+        Our goal was not only to explore that technical challenge, but also to build a
+        <strong>magical experience</strong> that demonstrates the possibilities of multi-room MR. Our definition of
+        creating magic is threefold:
+      </p>
+      <ul>
+        <li><strong>Eliciting amazement</strong>: interactions should make guests say “wow.”</li>
+        <li><strong>Blending physical and virtual</strong>: the experience should rely on both worlds.</li>
+        <li><strong>Cross-world interaction</strong>: physical objects influence virtual ones and vice versa.</li>
+      </ul>
+      <p>
+        The project name <strong>Liminal</strong> refers to existing between boundaries - in this case, between the
+        physical and virtual worlds.
+      </p>
+    </section>
+
+
+    <!-- Our Solution -->
+    <section class="content">
+      <h2>Our Solution</h2>
+      <p>
+        Instead of attempting a general-purpose solution to AR drift, we focused on a scenario common in
+        location-based entertainment: experiences where the developer also controls the environment.
+      </p>
+      <p>
+        This allowed us to embed <strong>ArUco markers</strong> throughout the physical space. When the headset
+        detects these markers, it can rapidly recalibrate its pose relative to the room, significantly reducing drift.
+      </p>
+      <!-- ArUco markers image -->
+      <img src="assets/liminal/aruco.png" alt="ArUco marker detection example">
+      <p>
+        By placing markers at known positions (outside doors and near points of interest), we created reliable anchor
+        points that allow the system to maintain alignment across multiple rooms.
+      </p>
+      <p>
+        Controlling the space also enabled richer interactions. By embedding sensors and physical props within the
+        environment, we could create moments where the physical and virtual worlds appear to interact. For example, a
+        guest might use a physical watering can to water a virtual plant, watching it grow as they pour water on it.
+      </p>
+    </section>
+
+    <!-- Narrative -->
+    <section class="content">
+      <h2>Narrative</h2>
+      <p>
+        Technical systems alone do not create magic. The experience also required a narrative framework that guides
+        the guest to discover interactions naturally.
+      </p>
+      <p>
+        In Liminal, the guest takes on the role of a <strong>night security guard in a strange museum</strong>
+        reminiscent of liminal “backrooms”-style spaces.
+      </p>
+      <p>
+        This setting serves several purposes:
+      </p>
+      <ul>
+        <li>A museum naturally supports exploration across multiple rooms.</li>
+        <li>Liminal environments feel slightly uncanny, allowing magical events to feel believable.</li>
+        <li>The security guard role encourages guests to investigate unusual phenomena.</li>
+      </ul>
+      <p>
+        As guests explore the museum, they encounter magical moments where the boundaries between physical and
+        virtual begin to blur.
+      </p>
+      <!-- Painting storyboard -->
+      <img src="assets/liminal/painting-storyboard.png" alt="Storyboard for painting interaction">
+      <p>
+        This is our storyboard for our painting experience, where players stick their head through a painting to find
+        a physical version of it, which they can interact with to "fix" the painting.
+      </p>
+    </section>
+
+    <!-- Contributions -->
+    <section class="content">
+      <h2>My Contributions</h2>
+      <p>
+        I served as a primary programmer and experience designer on Liminal, focusing on the technical systems that
+        enable the project’s magical interactions.
+      </p>
+      <ul>
+        <li>Integrated <strong>ArUco marker detection</strong> with Quest camera data to stabilize multi-room tracking.</li>
+        <li>Explored techniques for <strong>virtual occlusion and object removal</strong> to blend virtual elements
+        with physical surfaces.</li>
+        <li>Collaborated with designers to evaluate technical feasibility and adapt experience concepts while
+        <strong>preserving magic and immersion</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- Outcome -->
+    <section class="content">
+      <h2>Outcome</h2>
+      <p>
+        Liminal is currently in development and will be completed at the end of the Spring 2026 semester. So far we have:
+      </p>
+      <ul>
+        <li>Developed a system for stabilizing mixed reality across multiple rooms.</li>
+        <li>Designed several magical interactions blending physical and virtual elements.</li>
+        <li>Built a working prototype of the painting interaction experience.</li>
+      </ul>
+      <p>
+        Future interactions under development include encounters where a mysterious creature appears getting closer
+        and closer each time the guest looks into different doors, and an installation where manipulating a physical
+        clock affects time within the environment.
+      </p>
+      <p>
+        At the end of the semester, both the experience and the underlying techniques will be passed to
+        <strong>Schell Games</strong> for potential expansion into future mixed reality projects.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>
