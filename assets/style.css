@@ -183,6 +183,10 @@ a:hover {
   margin-top: 2rem;
 }
 
+.content > :first-child {
+    margin-top: 0;
+}
+
 .featured-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
