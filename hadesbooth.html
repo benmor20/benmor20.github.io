@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HadesBooth | Ben Morris</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+<body>
+  <main>
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Project header -->
+    <header class="project-header">
+      <div>
+        <h1>Hadestown Carnival Booth</h1>
+        <p>A Hadestown-themed Interactive Carnival Booth</p>
+        <div class="project-links">
+
+        </div>
+      </div>
+      <img src="assets/project-pics/hadesbooth.png" alt="HadesBooth logo">
+    </header>
+
+    <!-- Overview -->
+    <section class="content">
+      <h2>Overview</h2>
+      <p>
+        During the Spring 2026 semester, I worked with Carnegie Mellon's Theme Park
+        Engineering Group (TPEG), alongside Sustainable Earth and the American Society
+        of Civil Engineers, to design and build a <strong>Hadestown-themed Booth</strong>
+        for CMU Spring Carnival. Booth is a long-running competition in which student
+        organizations have <strong>just one week</strong> to construct an immersive
+        walk-through attraction around a common theme.
+      </p>
+      <p>
+        Our team created an interactive musical experience inspired by
+        <em>Hadestown</em>. Two guests worked together: one acted as a conductor,
+        creating musical sequences with a custom baton, while the other performed those
+        sequences on a custom-built lyre. Successful performances caused a garden of
+        animatronic flowers to bloom, eventually leading guests to one of two narrative
+        endings.
+      </p>
+      <div class="image-row">
+        <img src="assets/hadesbooth/HadesboothFront.jpg" alt="Front of the Hadestown Booth">
+        <img src="assets/hadesbooth/HadesboothSide.jpg" alt="Side of the Hadestown Booth">
+        <img src="assets/hadesbooth/HadesboothLyre.jpg" alt="Custom lyres designed for the Hadestown Booth">
+      </div>
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/5czGUABj_iU"
+          title="HadesBooth Gameplay Demo"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Contributions -->
+    <section class="content">
+      <h2>My Contributions</h2>
+      <p>
+        I served as both a software engineer and experience designer on the project,
+        helping shape the gameplay while implementing the software that controlled the
+        attraction.
+      </p>
+      <ul>
+        <li>Co-designed the two-player cooperative gameplay and progression through the experience.</li>
+        <li>Implemented the central gameplay controller, coordinating gameplay flow, scoring,
+            narrative progression, lighting, audio, and the flower animations.</li>
+        <li>Worked with teammates designing the custom controller, instrument,
+            electronics, lighting, and physical theming to create a cohesive guest
+            experience.</li>
+        <li>Helped build, paint, and theme the physical Booth during the week-long
+            construction period.</li>
+      </ul>
+    </section>
+
+    <section class="content">
+      <h2>Design Challenges</h2>
+      <p>
+        Our original design tracked an infrared LED attached to a conductor's baton
+        using an IR camera, allowing one player to "conduct" a melody for their partner
+        to then perform on a custom lyre. During final integration, we discovered that our curtains were not
+        dark enough, so daylight inside the booth overwhelmed the IR tracking system.
+      </p>
+      <p>
+        Rather than removing the experience entirely, we quickly redesigned the game
+        into a lyre-only, operator-controlled version. Ride operators sent notes to the
+        flower wall for guests to play and manually commanded the flowers to open. Because
+        the core guest interaction remained intact, guests never realized they were
+        experiencing a fallback version of the attraction.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Outcome</h2>
+      <p>
+        Despite the technical challenges, the Booth proved to be a success. Over
+        the course of carnival weekend, hundreds of guests
+        enthusiastically participated in the game, marvelled at the art and design,
+        and enjoyted the physical effects which helped bring the world of <em>Hadestown</em>
+        to life.
+      </p>
+      <p>
+        Our Booth won <strong>first place in the Blitz division</strong>, the smallest
+        Booth category at Spring Carnival.
+      </p>
+      <p>
+        More importantly, the project reinforced an important lesson in themed
+        entertainment: a great guest experience does not have to be 100% automatic.
+        A low-tech solution, sometimes even relying on people-power, may be the
+        best way to go. And, often, guests will not even know the difference.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </footer>
+  </main>
+</body>
+</html>
+

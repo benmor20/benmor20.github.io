@@ -221,7 +221,21 @@ a:hover {
 }
 
 .image-row img {
-  height: 280px;      /* adjust as needed */
+  height: 280px;
   width: auto;
-  border-radius: 8px; /* optional, matches the rest of your site */
+  border-radius: 8px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.video-container iframe {
+  width: min(100%, 800px);
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+  border-radius: 8px;
 }
