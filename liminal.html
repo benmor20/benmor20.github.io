@@ -24,7 +24,11 @@
         <p>Magical Multi-Room Mixed Reality</p>
         <div class="project-links">
           <a href="https://projects.etc.cmu.edu/liminal/" target="_blank" rel="noopener">📄 Project Site</a>
-          <a href="https://stream.etc.cmu.edu/projects/2026-semester-1/halves/day1/" target="_blank" rel="noopener">🎥 Halves Presentation (58:15)</a>
+          <a href="https://www.youtube.com/watch?v=qiip4m-WYqk" target="_blank" rel="noopener">🎥 Project Overview</a>
+          <a href="https://youtu.be/pAoMiIDc7xA" target="_blank" rel="noopener">🎥 Project Trailer</a>
+          <br>
+          <a href="https://youtu.be/Q5JARXDPRZE" target="_blank" rel="noopener">🎥 Halves Presentation</a>
+          <a href="https://youtu.be/TqKpEAUz3SE" target="_blank" rel="noopener">🎥 Final Presentation</a>
         </div>
         <p>
           <strong>Role:</strong> Programmer & Experience Designer<br>
@@ -107,26 +111,49 @@
         the guest to discover interactions naturally.
       </p>
       <p>
-        In Liminal, the guest takes on the role of a <strong>night security guard in a strange museum</strong>
-        reminiscent of liminal “backrooms”-style spaces.
+        We took inspiration from online horror such as the Backrooms and SCP. In Liminal, the guest takes on the role
+        of a new hire to help team Liminal <strong>investigate strange events at the ETC</strong>. Through the headset
+        that the Liminal organization gave them, they were able to see into an alternate dimension overlapping the ETC
+        where a student is trapped, and interact with weird objects straddling the two dimensions.
       </p>
       <p>
         This setting serves several purposes:
       </p>
       <ul>
-        <li>A museum naturally supports exploration across multiple rooms.</li>
-        <li>Liminal environments feel slightly uncanny, allowing magical events to feel believable.</li>
-        <li>The security guard role encourages guests to investigate unusual phenomena.</li>
+        <li>We did not have to try to explain away the reality that we were in the ETC</li>
+        <li>We did not have to ask the guest to ignore the fact that other students were in the hallways</li>
+        <li>We were able to lean on existing knowledge of the ETC for other aspects of our story</li>
       </ul>
+    </section>
+
+    <!-- Interactions -->
+    <section class="content">
+      <h2>Interactions</h2>
       <p>
-        As guests explore the museum, they encounter magical moments where the boundaries between physical and
-        virtual begin to blur.
+        We paid strong attention to our interactions and how they formed a cohesive story. Our priority was
+        interactions which felt magical - that is, <strong>blending the physical and virtual worlds</strong>.
       </p>
-      <!-- Painting storyboard -->
-      <img src="assets/liminal/painting-storyboard.png" alt="Storyboard for painting interaction">
       <p>
-        This is our storyboard for our painting experience, where players stick their head through a painting to find
-        a physical version of it, which they can interact with to "fix" the painting.
+        Our first interaction centered around a painting. We made a physical frame over which we placed a virtual wall.
+        On the virtual wall was a painting, aligned to a hole in the frame. Guests had to stick their head through the
+        painting, where they would see a 3-D (physical) version of it. <strong>Rearranging the pieces of this physical
+        version would also rearrange the pieces in the virtual painting</strong> through a hidden camera.
+      </p>
+      <div class="image-row">
+        <img src="assets/liminal/LiminalPhysicalPainting.jpg" alt="The physical painting frame: a wooden frame with an ArUco marker, strips of spandex where the guest looks through the painting, and a box covering a shelf that the guest looks into">
+        <img src="assets/liminal/LiminalVirtualPainting.png" alt="The painting seen through the headset. The physical elements are replaced by a wall matching the physical one around it, with a painting centered on it. The painting is of a painting of a painting of a painting...">
+      </div>
+      <p>
+        The second interaction involved a physical clock and potted plant. In the pot was a virtual plant, which was
+        dead. Guests had to rewind time on the clock, watching the plant grow in reverse, physically water the plant,
+        then move time forward again to watch it grow.
+      </p>
+      <p>
+        These interactions hit our criteria for magical. Through clever use of a blend of physical and virtual lighting,
+        it was often <strong>difficult to tell what was real and what was virtual</strong>. We often had guests tell us
+        they were surprised certain objects were real. In addition, <strong>changing the physical world also changed
+        the virtual</strong>. The blocks in the virtual painting were mirrored by their virtual counterpart, and the
+        plant responded to input from both turning the clock hands and being watered.
       </p>
     </section>
 
@@ -134,37 +161,60 @@
     <section class="content">
       <h2>My Contributions</h2>
       <p>
-        I served as a primary programmer and experience designer on Liminal, focusing on the technical systems that
+        I served as a primary programmer and an experience designer on Liminal, focusing on the technical systems that
         enable the project’s magical interactions.
       </p>
       <ul>
         <li>Integrated <strong>ArUco marker detection</strong> with Quest camera data to stabilize multi-room tracking.</li>
-        <li>Explored techniques for <strong>virtual occlusion and object removal</strong> to blend virtual elements
-        with physical surfaces.</li>
+        <li>Designed and built <strong>interactions between the physical and virtual worlds</strong>.</li>
         <li>Collaborated with designers to evaluate technical feasibility and adapt experience concepts while
         <strong>preserving magic and immersion</strong>.</li>
+        <li>Iterated on physical/virtual interactions to <strong>maximize magic with our technology</strong></li>
+        <li>Explored techniques for <strong>virtual occlusion and object removal</strong> to blend virtual elements
+        with physical surfaces.</li>
       </ul>
+      <p>
+        Beyond implementing individual systems, I often served as the bridge between engineering and experience design.
+        As new interactions were proposed, I evaluated their technical feasibility, prototyped solutions, and worked
+        with artists and designers to adapt concepts around hardware limitations without sacrificing the intended sense
+        of wonder. Rather than treating technical constraints as obstacles, we used them to shape interactions that were
+        both achievable and convincing.
+      </p>
     </section>
 
     <!-- Outcome -->
     <section class="content">
       <h2>Outcome</h2>
       <p>
-        Liminal is currently in development and will be completed at the end of the Spring 2026 semester. So far we have:
+        Liminal successfully provided a proof-of-concept for mixed reality experiences operating on a multi-room scale.
+        We managed to:
       </p>
       <ul>
-        <li>Developed a system for stabilizing mixed reality across multiple rooms.</li>
-        <li>Designed several magical interactions blending physical and virtual elements.</li>
-        <li>Built a working prototype of the painting interaction experience.</li>
+        <li>Deliver a 15 minute multi-room mixed reality experience to 30+ guests</li>
+        <li>Develop a system for stabilizing mixed reality across multiple rooms, cutting drift into sub-inch range.</li>
+        <li>Design and build several magical interactions blending physical and virtual elements.</li>
+        <li>Push the boundaries of current mixed reality, showing a clear benchmark of where it is at and what needs to improve.</li>
       </ul>
       <p>
-        Future interactions under development include encounters where a mysterious creature appears getting closer
-        and closer each time the guest looks into different doors, and an installation where manipulating a physical
-        clock affects time within the environment.
+        Guests were regularly wowed by the smoothness of the interactions and the way we were able to blend the physical
+        and virtual worlds. Several guests were even surprised that elements they thought were virtual turned out to be
+        physical! ETC professors praised our narrative design and ability to pair that with our tech. They felt our
+        tech enabled strong interactions for the guests, resulting in a very unique project.
       </p>
       <p>
-        At the end of the semester, both the experience and the underlying techniques will be passed to
-        <strong>Schell Games</strong> for potential expansion into future mixed reality projects.
+        At the end of the semester, both the experience and the underlying techniques were passed to
+        <strong>Schell Games</strong> for potential expansion into future mixed reality projects. In addition, we hope
+        to take pieces of this experience to conferences such as <strong>SIGGRAPH, TEI, and ISMAR</strong>.
+      </p>
+      <p>
+        Liminal demonstrated that stable, <strong>multi-room mixed reality experiences are possible</strong> when
+        developers can thoughtfully design both the virtual experience and the physical environment. We achieved
+        reliable tracking, convincing physical-virtual interactions, and a cohesive narrative spanning multiple rooms.
+      </p>
+      <p>
+        Liminal also highlighted exciting opportunities for future work. As tracking precision and mixed reality
+        hardware continue to improve, experiences like ours will be able to blend the physical and virtual worlds even
+        more seamlessly, enabling increasingly convincing and ambitious interactions.
       </p>
     </section>
 
